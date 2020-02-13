@@ -3,7 +3,7 @@ var questions = [
         album: 'Chasing A Balloon',
         cover: 'Chasing A Balloon',
         year: '2013',
-        options: ['White Banner (Intro)', 'Missing You Well', 'Do I ever', 'Survive', 'Take The Time', 'You Are Not For Me', 'Wu-Tang Forever (Remix)', 'Light Up (Remix)', 'Mad City (Remix)', 'Genius', 'Freaks And Geeks (Remix)', 'Covering The Moon', 'Black Cowboy', 'What Is That Noise (Outro)']
+        options: ['White Banner (Intro)', 'Missing You Well', 'Do I Ever', 'Survive', 'Take The Time', 'You Are Not For Me', 'Wu-Tang Forever (Remix)', 'Light Up (Remix)', 'Mad City (Remix)', 'Genius', 'Freaks And Geeks (Remix)', 'Covering The Moon', 'Black Cowboy', 'What Is That Noise (Outro)']
         
     },
     {
@@ -59,7 +59,6 @@ $(function() {
         showQuestion(event, $(this));
         $(document).ready(function() {
             $('.my_button').click(function() {
-                console.log("test");
                 var temp = $(this).val();
                 audio.src = `music/${temp}.mp3`;
                 audio.play();
