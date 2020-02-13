@@ -1,0 +1,161 @@
+:root{
+  --modal-duration: 1s;
+  --primary-color: #30336b;
+  --seconday-color: #be2edd;
+}
+
+
+
+.modal-body {
+  margin-left: 0px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+
+.flex-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding-top: 10px;
+}
+
+  
+/* Try 300px */
+.album-container {
+  background-color: #b8b8b8;
+  height: 420px;
+  width: 300px;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+  
+  
+  border-style: solid;
+  border-color: brown;
+}
+.album-info {
+  padding-top: 10px;
+  line-height: 10px;
+  font-size: 20px;
+}
+
+.cta-btn {
+  padding: 5px;
+  margin: -5px;
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+/* .modal-container {
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+.modal-container.show-modal {
+  display: block;
+}
+
+/* .modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+} */
+
+.modal-header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+}
+
+.modal-header h3{
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+
+.modal-content {
+  padding: 20px;
+  /* background-color: #b8b8b8; */
+  background-color: rgb(61, 61, 61);
+}
+
+
+
+.close-btn {
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn {
+  background-color: rgb(148, 146, 146);
+}
+
+.my_button {
+  display: block;
+  width: 100%;
+  border: solid;
+  background-color: rgb(163, 67, 67);
+  /* color: white; */
+  margin: 10px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* .modal .modal-popout-bg {
+  background-color: blueviolet;
+} */
+
+.heading {
+  padding-top: 60px;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: rgb(255, 11, 11);
+  position: relative;
+}
+
+.heading::after{
+  content: " ";
+  width: 10rem;
+  height: .8rem;
+  background-color: #45e19f;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}

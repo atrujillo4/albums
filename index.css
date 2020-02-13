@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+.heading {
+    padding-top: 60px;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: rgb(255, 11, 11);
+    position: relative;
+}
+
+.heading::after{
+    content: " ";
+    width: 10rem;
+    height: .8rem;
+    background-color: #45e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
