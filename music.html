@@ -94,12 +94,46 @@
                         <audio src="" id="audio"></audio>
                     </div>
       
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" class="close" data-dismiss="modal" onclick="pause()">Pause</button>
+                    
+                </div>
+                
+            </div>
+            <div class="modal-footer" id="modal-footer">
+                <div class="music-container" id="music-container">
+                    <div class="img-container">
+                        <img src="" alt="music-cover" id="music-cover" style="width: 100px">
+                    </div>
+                    <h4 id="title" style="color: red"></h4>
+                    <div class="music-info">
+                        
+                        <div class="progress-container" id="progress-container">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                    </div>
+                    <!-- <audio src="music/3005.mp3" id="audio"></audio> -->
+                    <audio>
+                        <source src="" type="audio/mpeg" id="audio">
+                        <source src="" type="audio/ogg">
+                        <p>Your browser doesn't support HTML5 audio. Here is a <a href="myAudio.mp4">link to the audio</a> instead.</p>
+                    </audio>
+                    
+                    <div class="navigation">
+                        <!-- <button id="prev" class="action-btn">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button id="play" class="action-btn action-btn-big">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="next" class="action-btn">
+                            <i class="fas fa-forward"></i>
+                        </button> -->
+                        <button type="button" class="far fa-stop-circle" class="close" data-dismiss="modal" onclick="pause()" id="stop">Stop</button>
                     </div>
                 </div>
+                
             </div>
         </div>
+        
 
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>

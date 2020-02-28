@@ -4,7 +4,13 @@
   --seconday-color: #be2edd;
 }
 
-
+body{
+  overflow-y:auto;
+  overflow-x: hidden !important;
+  /* margin-left: 15px; */
+  margin-right: -15px;
+  padding: 0px; 
+}
 
 .modal-body {
   margin-left: 0px;
@@ -12,6 +18,7 @@
 
 *{
   box-sizing: border-box;
+  /* overflow-x: hidden;  */
 }
 
 body{
@@ -59,6 +66,10 @@ body{
   width: 800px;
 }
 
+/* .action-btn{
+  width: 60px;
+} */
+
 /* .modal-container {
   background-color: rgba(0,0,0,0.6);
   display: none;
@@ -103,7 +114,68 @@ body{
   padding: 20px;
   /* background-color: #b8b8b8; */
   background-color: rgb(61, 61, 61);
+  padding-bottom: 100px;
 }
+
+.modal-footer {
+  border: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 500px;
+  min-width: 500px;
+  z-index: 0;
+}
+
+.modal-footer.play .music-container{
+  opacity: 1;
+  
+}
+
+.music-container{
+  background-color: rgb(204, 194, 192);
+  position: relative;
+  display: flex;
+  opacity: 0;
+  
+}
+
+.music-info{
+  position: absolute;
+  top:40px;
+  left: 110px;
+
+}
+
+.progress-container{
+  background-color: rgb(151, 148, 148);
+  
+  width: 350px;
+}
+
+.progress {
+  
+  color: red;
+  background-color: rgb(187, 186, 186);
+}
+
+#title{
+  float: left;
+  padding-left: 20px;
+}
+
+.navigation {
+  position: absolute;
+  display: inline-flex;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  
+}
+
+
 
 
 
@@ -158,4 +230,15 @@ body{
   left: 50%;
   transform: translateX(-50%);
   border-radius: 2rem;
+}
+
+
+@media screen and (max-width: 500px) {
+  .modal-footer {
+    max-width: 400px;
+    min-width: 400px;
+  }
+  .progress-container{    
+    width: 250px;
+  }
 }
